@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Lab Management System</string>
+    <string name="login_username">Username</string>
+    <string name="login_password">Password</string>
+    <string name="assign_post">Assign Post</string>
+    <string name="view_problem">View Problem</string>
+    <string name="textview">TextView</string>
+    <string name="textview1">TextView</string>
+    <string name="textview2">TextView</string>
+    <string name="textview3">TextView</string>
+    <string name="textview4">TextView</string>
+    <string name="tvFullname">TextView</string>
+    <string name="textviewLabNo">TextView</string>
+    <string name="textviewPost">TextView</string>
+    <string name="textviewDept">TextView</string>
+    <string name="btnhod">HOD</string>
+    <string name="btnadmin">Admin</string>
+    <string name="lab_incharge">Lab Incharge</string>
+</resources>

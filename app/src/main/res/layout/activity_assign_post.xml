@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AssignPost">
+    <TextView
+        android:id="@+id/postFullname"
+        android:layout_width="170dp"
+        android:layout_height="40dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.067" />
+
+    <TextView
+        android:id="@+id/postDept"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/postFullname"
+        app:layout_constraintTop_toBottomOf="@+id/postFullname" />
+
+    <TextView
+        android:id="@+id/postLabno"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/postDept"
+        app:layout_constraintTop_toBottomOf="@+id/postDept" />
+
+    <TextView
+        android:id="@+id/postPost"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/postLabno"
+        app:layout_constraintTop_toBottomOf="@+id/postLabno" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="164dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="@+id/postPost"
+        app:layout_constraintTop_toBottomOf="@+id/postPost">
+
+        <RadioButton
+            android:id="@+id/radioHod"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btnhod" />
+
+        <RadioButton
+            android:id="@+id/radioAdmin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btnadmin" />
+
+        <RadioButton
+            android:id="@+id/radioLabIncharge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lab Incharge"
+            android:checked="true"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnAssignPost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="Assgin Post"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
